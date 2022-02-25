@@ -1,0 +1,229 @@
+:root{
+    --text-clr: #303030;
+    --txt-clr-btn: #7c7c7c;
+    --shadow-clr-b: #80808060;
+    --shadow-clr-l: #8b8b8b;
+    --border: lightgrey;
+    --bg-light: #f2f2f2;
+    --dimension: 2.5rem;
+    --icon-size: 1.7rem;
+    --font: Arial, Helvetica, sans-serif;
+    --light-clr: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--font);
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    margin: 0.625rem;
+    color: var(--text-clr);
+    cursor: pointer;
+}
+a:hover{
+    text-decoration:underline;
+} 
+/*<header> Style*/
+header{
+    /* background-color: pink; */
+    width: 100%;
+    height: 3.75rem;
+}
+
+header nav{
+    margin: 0 auto;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    height: 100%;
+}
+
+header nav ul{
+    /* background-color: aquamarine; */
+    min-width: 20%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li::first-letter{
+    text-transform: uppercase;
+}
+
+nav ul li:nth-child(3){
+    /* background-color: tomato; */
+    background-image: url("/img/dots-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    filter: opacity(80%);
+}
+
+nav ul li a img{
+    border-radius: 50%;
+}
+/*</header> Style*/
+/*<logo> Style*/
+main{
+    /* background-color: pink; */
+    width:100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section{
+    margin-bottom: 2rem;
+}
+
+/* main > section:first-child{
+    background-color: aqua;
+} */
+
+section > img{
+    width: 35ch;
+}
+/*</logo> Style*/
+/*<input> Style*/
+main > section:nth-child(2){
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+section > div{
+    background-color: var(--light-clr);
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: .3rem;
+    border-radius: 50px;
+    border:1px var(--border) solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section > div:hover{
+    box-shadow: 0 1px 6px 0 var(--shadow-clr-b);
+}
+section > div > span{
+    /* background-color: lightcoral; */
+    background-image: url(/img/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin: 0 auto;
+    filter: opacity(70%);
+}
+
+section > div > input{
+    /* background-color: lightgreen; */
+    width: 80%;
+    height: var(--dimension);
+    border: none;
+    outline: none;
+    margin: 0;
+    cursor: auto;
+    font-family: var(--font);
+    font-size: 1rem;
+}
+
+section > div > a{
+    /* background-color: lightseagreen; */
+    background-image: url(/img/mic-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin: 0 auto;
+    cursor: pointer;
+}
+/*</input> Style*/
+/*<button> Style*/
+main > section:nth-child(3) button{
+    height: 2.25rem;
+    border: transparent 1px solid;
+    font-size: 1rem;
+    color: var(--txt-clr-btn);
+    background-color: var(--bg-light);
+    border-radius: 4px;
+    padding: 0 1.3rem;
+    margin: 2px 0.5rem;
+}
+main > section:nth-child(3) button:hover{
+    cursor: pointer;
+    border: var(--border) 1px solid;
+    box-shadow: 0 1px 1px var(--shadow-clr-l);
+    color: var(--text-clr);
+}
+
+main > section:nth-child(3) button::first-letter{
+    text-transform: uppercase;
+}
+/*</button> Style*/
+/*<link> Style*/
+main > section:nth-child(4){
+    /* background-color: #80808060; */
+    text-align: center;
+    width: 40%;
+    color: var(--text-clr);
+}
+main > section:nth-child(4) p::first-letter{
+    text-transform: uppercase;
+}
+main > section:nth-child(4) p > a{
+    color: blue;
+}
+/*</link> Style*/
+/*<footer> Style*/
+footer{
+    background-color: var(--bg-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top: var(--border) 1px solid;
+    width: 100%;
+    min-height: 3rem;
+    position: absolute;
+    bottom: 0;
+}
+footer ul li::first-letter{
+    text-transform: uppercase;
+}
+
+footer ul {
+    margin: 0.65rem;
+    list-style: none;
+    display: flex;
+}
+
+footer ul:first-child{
+    justify-self: left;
+}
+footer ul:nth-child(2){
+    justify-self: right;
+}
+
+footer ul li a{
+    color: var(--txt-clr-btn);
+}
+
+footer ul li a:hover{
+    cursor: pointer;
+}
+/*</footer> Style*/
