@@ -63,7 +63,7 @@ header nav ul li::first-letter{
 
 nav ul li:nth-child(3){
     /* background-color: tomato; */
-    background-image: url("/img/dots-menu.svg");
+    background-image: url("../img/dots-menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -120,7 +120,7 @@ section > div:hover{
 }
 section > div > span{
     /* background-color: lightcoral; */
-    background-image: url(/img/search-icon.svg);
+    background-image: url(../img/search-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -144,7 +144,7 @@ section > div > input{
 
 section > div > a{
     /* background-color: lightseagreen; */
-    background-image: url(/img/mic-icon.svg);
+    background-image: url(../img/mic-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
